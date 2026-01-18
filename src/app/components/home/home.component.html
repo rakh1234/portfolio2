@@ -1,20 +1,28 @@
 <div class="home-container fade-in">
-  <h2>My Projects</h2>
-  <div class="projects-grid">
-    <mat-card class="project-card" *ngFor="let project of projects">
-      <mat-card-header>
-        <mat-card-title>{{ project.title }}</mat-card-title>
-        <mat-card-subtitle>{{ project.shortDescription }}</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <p>{{ project.description }}</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <a mat-raised-button color="primary" [href]="project.githubUrl" target="_blank" style="text-decoration: none;">
-          <mat-icon>code</mat-icon>
-          View on GitHub
-        </a>
-      </mat-card-actions>
-    </mat-card>
+  <div class="about-section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Razan Khalid Al-Khodhair</h3>
+        <p class="contact-info">
+          <mat-icon>phone</mat-icon> +966 546493491 |
+          <mat-icon>email</mat-icon> razankhalid18@hotmail.com
+        </p>
+        <p>Software Engineer with 1+ years of experience in web application and RESTful API development. Proficient in Python and Django, with hands-on experience in full-stack development, database management, and DevOps practices. Committed to building reliable, high-performance software in collaborative environments.</p>
+        <p>My expertise spans across modern web technologies including Angular, React, Django, and database management with PostgreSQL and MSSQL. I have successfully developed and deployed containerized applications using Docker and automated deployment processes.</p>
+      </div>
+      <div class="profile-image">
+        <mat-icon class="profile-icon">person</mat-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item" *ngFor="let skill of skills">
+        <span class="skill-name">{{ skill.name }}</span>
+      </div>
+    </div>
   </div>
 </div>

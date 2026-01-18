@@ -5,23 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
-import { SkillsComponent } from './components/skills/skills.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SkillsComponent,
     ResumeComponent,
-    AchievementsComponent
+    AchievementsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +29,6 @@ import { MatIconModule } from '@angular/material/icon';
     MatTabsModule,
     MatCardModule,
     MatButtonModule,
-    MatProgressBarModule,
     MatIconModule
   ],
   providers: [],

@@ -7,11 +7,11 @@ import { PortfolioService } from '../../services/portfolio.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  projects: any[] = [];
+  skills: any[] = [];
 
   constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit(): void {
-    this.projects = this.portfolioService.getProjects();
+    this.skills = this.portfolioService.getSkills();
   }
 }
