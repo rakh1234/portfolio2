@@ -1,0 +1,17 @@
+<div class="achievements-container fade-in">
+  <h2>My Achievements</h2>
+  <div class="achievements-grid">
+    <mat-card class="achievement-card" *ngFor="let achievement of achievements">
+      <mat-card-header>
+        <div class="achievement-icon">
+          <mat-icon>emoji_events</mat-icon>
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <h3>{{ achievement.title }}</h3>
+        <p>{{ achievement.description }}</p>
+        <span class="achievement-date">{{ achievement.date }}</span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

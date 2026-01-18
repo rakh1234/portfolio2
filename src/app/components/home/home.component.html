@@ -1,0 +1,20 @@
+<div class="home-container fade-in">
+  <h2>My Projects</h2>
+  <div class="projects-grid">
+    <mat-card class="project-card" *ngFor="let project of projects">
+      <mat-card-header>
+        <mat-card-title>{{ project.title }}</mat-card-title>
+        <mat-card-subtitle>{{ project.shortDescription }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ project.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-raised-button color="primary" [href]="project.githubUrl" target="_blank" style="text-decoration: none;">
+          <mat-icon>code</mat-icon>
+          View on GitHub
+        </a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
