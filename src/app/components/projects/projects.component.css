@@ -30,6 +30,7 @@
 .mat-card-header {
   background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
   padding: 16px;
+  height: 25%;
 }
 
 .mat-card-title {
@@ -49,7 +50,7 @@
 .mat-card-actions {
   padding: 16px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 a {

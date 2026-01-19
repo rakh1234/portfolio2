@@ -10,9 +10,13 @@
         <p>{{ project.description }}</p>
       </mat-card-content>
       <mat-card-actions>
-        <a mat-raised-button color="primary" [href]="project.githubUrl" target="_blank" style="text-decoration: none;">
+        <a mat-raised-button color="primary" [href]="project.githubUrl" target="_blank">
           <mat-icon>code</mat-icon>
           View on GitHub
+        </a>
+        <a *ngIf="project.liveDemoUrl" mat-raised-button color="accent" [href]="project.liveDemoUrl" target="_blank">
+          <mat-icon>launch</mat-icon>
+          Live Demo
         </a>
       </mat-card-actions>
     </mat-card>
