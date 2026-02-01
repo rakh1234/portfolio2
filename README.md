@@ -10,7 +10,7 @@ A portfolio website built with Angular.
 - **Achievements**: Display of professional accomplishments and awards
 
 The application is configured for deployment on [Render](https://render.com/) using a `render.yaml` file, allowing seamless hosting of the web service in the cloud.
-🔗 **Live Demo**: [https://healthtracker-is4l.onrender.com]([https://healthtracker-is4l.onrender.com](https://healthtracker-is4l.onrender.com/))
+🔗 **Live Demo**: [https://portfolio-0nl8.onrender.com](https://portfolio-0nl8.onrender.com/)
 
 ## Technologies Used
 
